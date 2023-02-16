@@ -22,12 +22,25 @@ section {
     margin-top: 100px;
 }
 
-/* common style end*/
+main {
+    width: 1200px;
+    margin: 0 auto;
+}
 
 header {
+    width: 100%;
     background: rgba(255, 144, 14, 0.1);
+}
+
+.header-container {
+    width: 1460px;
+    margin: 0 auto;
     padding: 10px;
 }
+
+/* common style end*/
+
+
 
 /* nav style */
 .nav-title {
@@ -89,7 +102,6 @@ nav ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 301px;
     gap: 73px;
 }
 
@@ -132,13 +144,18 @@ nav ul li {
 .experience-contaniner {
     display: flex;
     justify-content: space-between;
-    margin: 0 228px;
-    gap: 54px;
+    gap: 74px;
 }
+
+
 
 .experience-contaniner p {
     font-weight: 400;
     font-size: 16px;
+}
+
+.architect {
+    position: relative;
 }
 
 .architect img {
@@ -170,4 +187,234 @@ nav ul li {
     margin-bottom: 10px;
     font-weight: 600;
     font-size: 16px;
+}
+
+.total-experience {
+    width: 200px;
+    height: 100px;
+    background-color: #FF900E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -45px;
+    padding: 8px;
+    left: -50px;
+}
+
+.year {
+    color: #fff;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.e-text {
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+/* achievement section style */
+.some-content {
+    width: 540px;
+}
+
+.some-title {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.some-description {
+    margin-top: 20px;
+}
+
+.total-achievement {
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    margin-top: 60px;
+}
+
+.achievement {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 30px 0px;
+    text-align: center;
+    width: 150px;
+}
+
+.achievement h2 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.achievement p {
+    font-weight: 500;
+    color: #727272;
+}
+
+/* sponsor section style */
+.sponsor-title {
+    text-align: center;
+}
+
+.sponsor-title h2 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.sponsor-title p {
+    margin-top: 20px;
+}
+
+.sponsor-company {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+
+.sponsor-company img {
+    width: 100px;
+}
+
+/* footer section start */
+
+.footer-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-title {
+    margin-top: 50px;
+    background: #ddd;
+    padding: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* responsive design for mobile view */
+@media screen and (max-width:576px) {
+    .header {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .features,
+    .experience-contaniner,
+    .total-achievement,
+    .sponsor-company,
+    .header,
+    nav,
+    ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .team {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        row-gap: 20px;
+    }
+
+    .features-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .features-title {
+        font-size: 70px;
+    }
+
+    .features-description {
+        font-size: 2em;
+    }
+
+    .primary-btn {
+        width: 70%;
+        padding: 40px;
+        font-size: 40px;
+        margin-top: 10px;
+    }
+
+
+    .total-experience {
+        bottom: -180px;
+        left: 15%;
+        width: 70%;
+        padding: 30px 0px;
+    }
+
+    .total-experience h3 {
+        font-size: 70px;
+    }
+
+    .total-experience p,
+    li {
+        font-size: 2em;
+    }
+
+    .experience {
+        width: 90%;
+    }
+
+    .e-description p,
+    .some-description {
+        font-size: 2em;
+    }
+
+    .experience p {
+        font-size: 2em;
+    }
+
+    .experience h4 {
+        font-size: 2em;
+    }
+
+    .achievement-container {
+        margin-top: 200px;
+    }
+
+    .achievement {
+        width: 100%;
+    }
+
+    .achievement img {
+        width: 200px;
+    }
+
+    .achievement h2,
+    .some-title,
+    .sponsor-title h2 {
+        font-size: 5em;
+    }
+
+    .achievement p,
+    .sponsor-description {
+        font-size: 2em;
+    }
+
+    .some-content {
+        margin-left: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sponsor-company img {
+        width: 300px;
+    }
+
+    .footer-title {
+        text-align: center;
+        width: 100%;
+    }
+
 }
